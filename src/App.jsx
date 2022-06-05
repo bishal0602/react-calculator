@@ -83,6 +83,7 @@ const App = () => {
     }
   };
 
+  // Calculation
   let result;
   const evaluate = () => {
     let prev = parseFloat(previousValue);
@@ -106,6 +107,8 @@ const App = () => {
     setCurrentValue("");
     setPreviousValue(result);
   };
+
+  // Number Formatter
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
@@ -115,12 +118,7 @@ const App = () => {
         <div className="col-span-full justify-self-end grid grid-rows-3 text-right">
           <div className="text-lime-600 text-2xl font-bold">{operator}</div>
           <div className="text-3xl">
-            {
-              currentValue === "" ? "" : numberWithCommas(currentValue)
-              // currentValue.includes(".")
-              // ? currentValue
-              // : new Intl.NumberFormat().format(currentValue)
-            }
+            {currentValue === "" ? "" : numberWithCommas(currentValue)}
           </div>
           <div className="text-gray-600 text-2xl">{previousValue}</div>
         </div>
@@ -230,7 +228,7 @@ const App = () => {
             <img
               src="/GithubLogoWhite.png"
               alt="Github"
-              className="w-[100%] hover:scale-105 ease-in-out duration-300"
+              className="w-[80%] hover:scale-105 ease-in-out duration-300"
             />
           </a>
         </div>
