@@ -30,3 +30,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#disabled-interaction {
+  pointer-events: none;
+}
+
+#error {
+  color: red;
+}
