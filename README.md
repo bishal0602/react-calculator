@@ -6,6 +6,6 @@
 <br>
 <div>
 <h4 style="text-align:center">Snapshot</h4>
-<div><img src="https://i.imgur.com/KfzeW4s.png" alt="calculato app snapshot" /></div>
+<div><img src="https://i.imgur.com/KfzeW4s.png" alt="calculato app snapshot" style="border:green solid 2px; border-radius:2rem"/></div>
 </div>
 </div>
